@@ -91,11 +91,15 @@ WSGI_APPLICATION = 'food_shop_server.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        'ATOMIC_REQUESTS': False, 
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER':'postgres.ylxtxqqpchljdnlkjrdo',
+        'PASSWORD': 'qhjOtsSURREwTiuS',
+        'HOST': 'aws-0-ap-southeast-1.pooler.supabase.com',
+        'PORT': '6543',
     }
 }
+
 
 # DATABASES = {
 #     'default': dj_database_url.config(
